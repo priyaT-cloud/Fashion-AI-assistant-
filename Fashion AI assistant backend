@@ -43,4 +43,8 @@ async def recommend(query: dict):
     else:
         advice = "You look fantastic! Try gold accessories for a luxe finish."
     return {"advice": advice}
+fastapi
+uvicorn
+python-multipart
+requests
 
