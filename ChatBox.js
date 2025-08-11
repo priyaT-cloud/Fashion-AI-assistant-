@@ -7,7 +7,7 @@ function ChatBox() {
   const sendMessage = async () => {
     if (!input.trim()) return;
     setMessages((prev) => [...prev, { from: 'user', text: input }]);
-    const res = await fetch('https://fashion-ai-assistant-2-qa47.onrender.com', {
+    const res = await fetch('https://fashion-ai-assistant-2-qa47.onrender.com/recommend/',{
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ query: input }),
