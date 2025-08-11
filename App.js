@@ -16,7 +16,7 @@ function App() {
     const formData = new FormData();
     formData.append('user_photo', userPhoto);
     formData.append('garment_photo', garmentPhoto);
-    const res = await fetch('https://fashion-ai-assistant-2-qa47.onrender.com', {
+    const res = await fetch('https://fashion-ai-assistant-2-qa47.onrender.com/try-on/', {
       method: 'POST',
       body: formData
     });
